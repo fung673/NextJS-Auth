@@ -12,6 +12,7 @@
     "@prisma/client": "^5.17.0",
     "git": "^0.1.5",
     "next": "14.2.5",
+    "package-name": "^0.1.0",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -19,6 +20,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "encoding": "^0.1.13",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "prisma": "^5.17.0",
