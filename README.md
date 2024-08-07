@@ -1,1 +1,1 @@
-# Next.js with NextAuth Practice Project
+# Next.js with NextAuth Project
