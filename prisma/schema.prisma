@@ -15,3 +15,28 @@ model employees {
   salary         Float
   country        String
 }
+
+model User {
+  id            String    @id @default(cuid())
+  account       String    @unique
+  password      String
+  name          String
+  image         String
+  sessions      Session[]
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}

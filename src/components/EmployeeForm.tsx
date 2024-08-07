@@ -1,5 +1,5 @@
 import { FormEvent } from 'react';
-import styles from '../page.module.css'
+import styles from '../app/page.module.css'
 
 type EmployeeFormProps = {
   onSubmit: (formData: FormData) => void;
@@ -17,15 +17,15 @@ export default function EmployeeForm({ onSubmit, isLoading }: EmployeeFormProps)
   return (
     <form onSubmit={handleSubmit} className={styles.form}>
       <label className={styles.label}>First name:</label>
-      <input type="text" name="firstName" required />
+      <input type="text" name="firstName" className={styles.input} required />
       <label className={styles.label}>Last name:</label>
-      <input type="text" name="lastName" required />
+      <input type="text" name="lastName" className={styles.input} required />
       <label className={styles.label}>Employee number:</label>
-      <input type="number" name="employeenumber" required />
+      <input type="number" name="employeenumber" className={styles.input} required />
       <label className={styles.label}>Salary:</label>
-      <input type="number" name="salary" step="0.01" required />
+      <input type="number" name="salary" step="0.01" className={styles.input} required />
       <label className={styles.label}>Country:</label>
-      <input type="text" name="country" required />
+      <input type="text" name="country" className={styles.input} required />
       <button type="submit" className={styles.button} disabled={isLoading}>
         {isLoading ? 'Submitting...' : 'Submit'}
       </button>
