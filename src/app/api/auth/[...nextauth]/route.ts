@@ -47,7 +47,7 @@ const handler = NextAuth({
   },
   session: {
     strategy: "jwt",
-    maxAge: 10,
+    maxAge: 300,
   },
 });
 

@@ -51,7 +51,6 @@ export default function Home() {
         {isStaffAdded && <div className={styles.success}>The staff {newStaffName} has been created</div>}
         {error && <div className={styles.error}>{error}</div>}
         <div className={styles.message}>The message: {message}</div>
-        <Link href='/login' className={styles.linkButton}>Login Page</Link>
       </div>
     </div>
   );

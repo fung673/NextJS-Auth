@@ -27,7 +27,7 @@ export default function EmployeeForm({ onSubmit, isLoading }: EmployeeFormProps)
       <label className={styles.label}>Country:</label>
       <input type="text" name="country" className={styles.input} required />
       <button type="submit" className={styles.button} disabled={isLoading}>
-        {isLoading ? 'Submitting...' : 'Submit'}
+        Submit
       </button>
     </form>
   );
